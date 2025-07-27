@@ -8,7 +8,7 @@ const Header = () => {
 
             <div className=' w-full h-[65px] bg-blue-950 text-white'>
                 <header className='w-[95%] mx-auto h-[65px] flex items-center px-1 justify-between'>
-                    <h1 className='text-2xl font-semibold '>Logo</h1>
+                    <h1 className='text-2xl font-semibold '>[Zubain]</h1>
 
                     <nav>
                         <ul className='flex gap-[35px] text-sm'>
@@ -26,6 +26,26 @@ const Header = () => {
 
 
             {/* Header with searchbar */}
+
+            <div className='border border-black mt-7 w-full h-[65px] bg-blue-950'>
+                <header className='w-[95%] h-[65px] mx-auto text-white flex items-center justify-between'>
+                    <h1 className='text-2xl font-semibold '>[Zubain]</h1>
+
+                    <nav >
+                        <ul className='flex gap-[35px] text-sm'>
+                            <li><a href="#" className='hover:text-blue-300 transition duration-300 ease-in-out'>Home</a></li>
+                            <li><a href="#" className='hover:text-blue-300 transition duration-300 ease-in-out'>Contact</a></li>
+                            <li><a href="#" className='hover:text-blue-300 transition duration-300 ease-in-out'>Service</a></li>
+                            <li><a href="#" className='hover:text-blue-300 transition duration-300 ease-in-out'>About</a></li>
+                        </ul>
+                    </nav>
+
+                        <div>
+                            <input type="text" placeholder='Search here' className='border border-white p-2.5 outline-none rounded-lg' />
+                        </div>
+                </header>
+
+            </div>
 
 
             {/* Header with searchbar */}
