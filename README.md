@@ -1,6 +1,6 @@
 # 🚀 My React Project
 
-A React-based project using prebuilt, reusable components (headers, footers, buttons, etc.) copied from [react-prebuilt-components](https://github.com/yourusername/react-prebuilt-components) to speed up development.
+A React-based project using prebuilt, reusable components (headers, footers, buttons, etc.) copied from [react-prebuilt-components](https://github.com/Zubain-Nadeem/react-prebuilt-components) to speed up development.
 
 ---
 
