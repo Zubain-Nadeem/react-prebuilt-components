@@ -5,6 +5,15 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 
+// Header wiht dropdown
+import { FaRegHeart } from "react-icons/fa";
+import { BsCart } from "react-icons/bs";
+import { Dropdown, DropdownItem } from "flowbite-react";
+
+
+
+
+
 const Header = () => {
     return (
 
@@ -117,6 +126,46 @@ const Header = () => {
 
             </div>
             {/* Header wiht Top Section */}
+
+            {/* Navbar with Dropdown */}
+
+
+            <div className='border border-black mt-7 w-full h-[65px] bg-blue-950'>
+                <header className='w-[95%] h-[65px] mx-auto text-white flex items-center justify-between'>
+                    <h1 className='text-2xl font-semibold '>[Zubain]</h1>
+
+                    <nav >
+                        <ul className='flex gap-10 text-sm'>
+                            <li><a href="#" className='hover:text-blue-300 transition duration-300 ease-in-out'>Home</a></li>
+                            <Dropdown label="Pages" dismissOnClick={false} className='cursor-pointer'>
+                                <DropdownItem className='hover:text-blue-300 transition duration-300 ease-in-out cursor-pointer bg-blue-950'>Dashboard</DropdownItem>
+                                <DropdownItem className='hover:text-blue-300 transition duration-300 ease-in-out cursor-pointer bg-blue-950'>Settings</DropdownItem>
+                                <DropdownItem className='hover:text-blue-300 transition duration-300 ease-in-out cursor-pointer bg-blue-950'>Earnings</DropdownItem>
+                                <DropdownItem className='hover:text-blue-300 transition duration-300 ease-in-out cursor-pointer bg-blue-950'>Sign out</DropdownItem>
+                            </Dropdown>
+                              <Dropdown label="Blog" dismissOnClick={false} className='cursor-pointer'>
+                                <DropdownItem className='hover:text-blue-300 transition duration-300 ease-in-out cursor-pointer bg-blue-950'>Dashboard</DropdownItem>
+                                <DropdownItem className='hover:text-blue-300 transition duration-300 ease-in-out cursor-pointer bg-blue-950'>Settings</DropdownItem>
+                                <DropdownItem className='hover:text-blue-300 transition duration-300 ease-in-out cursor-pointer bg-blue-950'>Earnings</DropdownItem>
+                                <DropdownItem className='hover:text-blue-300 transition duration-300 ease-in-out cursor-pointer bg-blue-950'>Sign out</DropdownItem>
+                            </Dropdown>
+                            <li><a href="#" className='hover:text-blue-300 transition duration-300 ease-in-out'>Contact</a></li>
+                            <li><a href="#" className='hover:text-blue-300 transition duration-300 ease-in-out'>Service</a></li>
+                            <li><a href="#" className='hover:text-blue-300 transition duration-300 ease-in-out'>About</a></li>
+                        </ul>
+                    </nav>
+
+                    <div className=' flex items-center gap-6'>
+                        <FaRegHeart className='text-xl' />
+                        <BsCart className='text-xl' />
+
+                        <input type="text" placeholder=' Search here' className='border border-white p-2.5 outline-none rounded-lg' />
+                    </div>
+                </header>
+
+            </div>
+
+            {/* Navbar with Dropdown */}
 
         </div>
     )
