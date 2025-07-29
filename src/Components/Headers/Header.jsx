@@ -19,6 +19,8 @@ const Header = () => {
 
         <div>
 
+            <h1 className='py-3 flex justify-center items-center text-4xl font-bold'>Headers</h1>
+
             {/* Simple Header Logo + Navlinks */}
 
             <div className=' w-full h-[65px] bg-blue-950 text-white'>
